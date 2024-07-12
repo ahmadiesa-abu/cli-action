@@ -1,6 +1,6 @@
 name: Cloudify CLI
 author: Isaac Shabtay & Jaroslaw Rzeszutek
-description: Runs a generic Cloudify CLI command.
+description: Runs a generic NE CLI command.
 branding:
   icon: cloud
   color: white
@@ -18,7 +18,7 @@ inputs:
 runs:
   using: docker
   image: docker://ahmadiesa/neci:1.0.0
-  entrypoint: cfyci
+  entrypoint: neci
   args:
     - cli
     - '--command'
